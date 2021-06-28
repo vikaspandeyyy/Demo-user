@@ -1,0 +1,12 @@
+<!-- string interpolation  -->
+<h1>{{username}}</h1>
+<h1>{{getVal()}}</h1>
+<h1>{{userID}}</h1>
+<!-- <button disabled>Clickme</button> -->
+
+<!-- using dynamic  or property binding  --> 
+<!-- <button [disabled]="isButtonDisabled">Clickme</button>
+<button [disabled]="!isButtonDisabled">Clickme</button> -->
+<button (click)="toggleButton()" [disabled]="!isButtonDisabled" >{{isButtonDisabled ? "Enable me" : "Disable me"}}</button>
+<button (click)="isButtonDisabled=true" >Click me</button>
+
